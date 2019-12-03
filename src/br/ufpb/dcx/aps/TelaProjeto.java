@@ -2,6 +2,9 @@ package br.ufpb.dcx.aps;
 
 public class TelaProjeto {
 	private FabricaAbstrata fabrica;
+	private Janela janela;
+	private Menu menu;
+	private Botao botao;
 	
 	public TelaProjeto() {}
 	
@@ -9,10 +12,14 @@ public class TelaProjeto {
 		this.fabrica = fabrica;
 	}
 	
-	public void montar() {}
+	public void montar() {
+		this.janela = this.fabrica.criarJanela();
+		this.menu = this.fabrica.criarMenu();
+		this.botao = this.fabrica.criarBotao();
+	}
 	
 	public String desenhar() {
-		return null;
+		return janela.desenhar()+"{"+menu.desenhar()+","+botao.desenhar()+"}";
 	}
 	
 }

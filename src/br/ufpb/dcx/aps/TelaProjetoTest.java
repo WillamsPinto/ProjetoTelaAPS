@@ -6,12 +6,24 @@ import org.junit.jupiter.api.Test;
 
 class TelaProjetoTest {
 
-	void testTelaProjeto() {
+	@Test
+	void testTelaWindows() {
 		TelaProjeto tela = new TelaProjeto();
 		tela.setFabrica(new FabricaWindows());
 		tela.montar();
 		tela.desenhar();
 		
-		assertEquals("JanelaQindows{MenuWindows, BotaoWindows}", tela.desenhar());
+		assertEquals("JanelaWindows{MenuWindows,BotãoWindows}", tela.desenhar());
 	}
+	
+	@Test
+	void testeTelaAndroid() {
+		TelaProjeto tela = new TelaProjeto();
+		tela.setFabrica(new FabricaAndroid());
+		tela.montar();
+		tela.desenhar();
+		
+		assertEquals("JanelaAndroid{MenuAndroid,BotãoAndroid}", tela.desenhar());
+	}
+
 }

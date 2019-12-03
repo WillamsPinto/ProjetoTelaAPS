@@ -4,7 +4,7 @@ public class MenuWindows implements Menu{
 
 
 	public String desenhar() {
-		return null;
+		return "MenuWindows";
 	}
 
 }

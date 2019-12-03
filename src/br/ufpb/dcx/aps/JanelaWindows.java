@@ -4,7 +4,7 @@ public class JanelaWindows implements Janela{
 
 
 	public String desenhar() {
-		return null;
+		return "JanelaWindows";
 	}
 	
 }

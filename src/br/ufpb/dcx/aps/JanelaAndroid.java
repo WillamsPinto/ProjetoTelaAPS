@@ -4,7 +4,7 @@ public class JanelaAndroid implements Janela{
 
 
 	public String desenhar() {
-		return null;
+		return "JanelaAndroid";
 	}
 
 }

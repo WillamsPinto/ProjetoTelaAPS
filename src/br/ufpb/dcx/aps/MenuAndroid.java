@@ -4,7 +4,7 @@ public class MenuAndroid implements Menu {
 
 
 	public String desenhar() {
-		return null;
+		return "MenuAndroid";
 	}
 
 }

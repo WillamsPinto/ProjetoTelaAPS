@@ -4,7 +4,7 @@ public class BotaoAndroid implements Botao{
 
 
 	public String desenhar() {
-		return null;
+		return "BotãoAndroid";
 	}
 	
 }
